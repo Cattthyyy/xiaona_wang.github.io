@@ -304,7 +304,9 @@
   }
 
   li {
-    white-space: nowrap;
+    /* Long affiliations and locations must wrap; the sidebar column is a
+       fixed width, so nowrap clips them instead. */
+    white-space: normal;
   }
 
   a {
